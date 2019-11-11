@@ -26,3 +26,14 @@ spring.druid.maxPoolPreparedStatementPerConnectionSize=40
 spring.druid.filters=stat,wall,log4j
 # 通过connectProperties属性来打开mergeSql功能;慢SQL记录
 spring.druid.connectionProperties=druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+
+driver=oracle.jdbc.driver.OracleDriver
+url=jdbc:oracle:thin:@139.159.228.47:1521:orcl
+user=ltcs5
+pass=ltcs5
+initsize=1
+maxactive=1
+maxwait=5000
+maxidle=1
+minidle=1
